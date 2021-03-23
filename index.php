@@ -24,7 +24,7 @@
         <link href="css/loader.css" rel="stylesheet">
     </head>
     
-    <body onload="pageLoad()">
+    <body onload="pageLoad();">
         
         <div id="loader-wrapper">
         <img src='img/500.png' id='loader-logo'>
@@ -370,7 +370,8 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js" ></script>
 
-        <script>
+        <script type="text/javascript">
+        $(document).ready(function(){
             var myVar;
 
             function pageLoad() {
@@ -381,6 +382,7 @@
               document.getElementById("loader-wrapper").style.display = "none";
               document.getElementById("content").style.display = "block";
             }
+        });
         </script>  
         
     </body>
