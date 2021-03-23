@@ -22,6 +22,23 @@
 ?> 
         <link href="css/list-page.css" rel="stylesheet">
         <link href="css/loader.css" rel="stylesheet">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js" ></script>
+
+                <script type="text/javascript">
+                $(document).ready(function(){
+                    var myVar;
+
+                    function pageLoad() {
+                    myVar = setTimeout(showPage, 4000);
+                    }
+
+                    function showPage() {
+                    document.getElementById("loader-wrapper").style.display = "none";
+                    document.getElementById("content").style.display = "block";
+                    }
+                });
+                </script>  
     </head>
     
     <body onload="pageLoad();">
@@ -365,25 +382,6 @@
             <?php include 'includes/footer.php'; ?>
         </div>
         
-
-        
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js" ></script>
-
-        <script type="text/javascript">
-        $(document).ready(function(){
-            var myVar;
-
-            function pageLoad() {
-              myVar = setTimeout(showPage, 4000);
-            }
-
-            function showPage() {
-              document.getElementById("loader-wrapper").style.display = "none";
-              document.getElementById("content").style.display = "block";
-            }
-        });
-        </script>  
         
     </body>
 </html>
