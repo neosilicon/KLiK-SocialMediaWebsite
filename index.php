@@ -26,7 +26,6 @@
         <script src="js/bootstrap.min.js" ></script>
 
                 <script type="text/javascript">
-                $(document).ready(function(){
                     var myVar;
 
                     function pageLoad() {
@@ -37,7 +36,6 @@
                     document.getElementById("loader-wrapper").style.display = "none";
                     document.getElementById("content").style.display = "block";
                     }
-                });
                 </script>  
     </head>
     
