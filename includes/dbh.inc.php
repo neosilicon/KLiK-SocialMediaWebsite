@@ -1,9 +1,9 @@
 <?php
 
-$serverName = $_ENV["DATABASE_SERVICE_NAME"]; //mydb.local
-$dBUsername = $_ENV["DATABASE_USER"]; //root
-$dBPassword = $_ENV["DATABASE_PASSWORD"]; //"eldererajinMenji99";
-$dBName = "klik_database"; //klik_database
+$serverName = $_ENV["DATABASE_SERVICE_NAME"]; 
+$dBUsername = $_ENV["DATABASE_USER"]; 
+$dBPassword = $_ENV["DATABASE_PASSWORD"]; 
+$dBName = "klik_db";
 
 $conn = mysqli_connect($serverName, $dBUsername, $dBPassword, $dBName, 3306);
 
